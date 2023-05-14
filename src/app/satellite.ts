@@ -13,9 +13,10 @@ export class Satellite {
       this.launchDate = launchDate;
   }
 
-  isSpaceDebris(): boolean {isSpaceDebris(): boolean {
-      return this.type.toUpperCase() === "SPACE DEBRIS";
+  isSpaceDebris(): boolean {
+  return this.type.toUpperCase() === "SPACE DEBRIS";
 }
+
 // TODO 3a: fix isSpaceDebris check
 
 
