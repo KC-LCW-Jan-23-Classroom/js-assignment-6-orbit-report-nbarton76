@@ -9,7 +9,7 @@
      <th>Orbit Type</th>
      <th>Launch Date</th>
   </tr>
-  <tr *ngFor="let satellite of satellites; let i = index" [class.stripe]="i % 2 === 0">
+  <tr class="data-row" *ngFor = "let satellite of satellites">
      <td *ngFor="let property of objectKeys(satellite)" [class.warning]="satellite.isSpaceDebris() && property === 'type'">
         {{satellite[property]}}
      </td>
